@@ -1,0 +1,29 @@
+.bit {
+    width: 100px;
+    height: 50px;
+    /* position: absolute; */
+}
+
+.bitContainer{
+    display: flex;
+    margin-bottom: 10px;
+    width: 200px;
+    
+}
+
+.valueContainer{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+
+    /* position: absolute; */
+    /* border-bottom: black solid 1px; */
+    
+}
+
+.value{
+    font-size: large;
+    color: white;
+    /* margin-left: 40px; */
+    
+}

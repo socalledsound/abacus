@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-
+import bitReducer from '../features/bit/bitSlice';
+import byteReducer from '../features/byte/byteSlice'
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    bits: bitReducer,
+    bytes: byteReducer,
   },
 });
