@@ -1,12 +1,12 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import Bit from '../bit/Bit'
-import { selectTotal, selectBits } from '../bit/bitSlice'
+import Bit from './Bit'
+import { selectTotal, selectBits } from './memorySlice'
 import styles from './Byte.module.css'
 
-const Byte = ({byteIndex}) => {
+const Byte = ({byteIdx}) => {
 
-  const total = useSelector(selectTotal)
+  const total = useSelector(selectTotal(byteIdx))
   const numBits = useSelector(selectBits)
   const bits = Array.from({length: numBits}, (el, i) => i)
 
@@ -32,7 +32,7 @@ const Byte = ({byteIndex}) => {
         <div className={styles.byteContainer}>
 
         {
-            bits.map((bead, idx) => <Bit key={`bit${idx}`} bitIndex={idx} byteIndex={byteIndex}/>)
+            bits.map((bead, bitIdx) => <Bit key={`bit${bitIdx}`} bitIdx={bitIdx} byteIdx={byteIdx}/>)
         }
         <div className={styles.resultsContainer}>
         <div>
