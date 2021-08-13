@@ -6,7 +6,8 @@
 }
 
 .combinedBytes {
-  background-color: rgb(227, 214, 241);
+  /* background-color: rgb(227, 214, 241); */
   padding: 2rem;
   border-radius: 0.6rem;
+  border: solid 2px rgb(154, 79, 235);
 }
