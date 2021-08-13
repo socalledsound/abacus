@@ -1,29 +1,22 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import Bit from './Bit'
-import { selectTotal, selectBits } from './memorySlice'
+import { selectTotal, selectBits,  selectBitValuesByIndex } from './memorySlice'
 import styles from './Byte.module.css'
 
 const Byte = ({byteIdx}) => {
 
   const total = useSelector(selectTotal(byteIdx))
   const numBits = useSelector(selectBits)
+  const bitValues = useSelector( selectBitValuesByIndex(byteIdx))
+  console.log(bitValues)
+  // const reversedBitValues = 
+  // console.log(reversedBitValues)
+  let binary = bitValues.map(el => el ? 0 : 1)
+  console.log(binary)
   const bits = Array.from({length: numBits}, (el, i) => i)
-
-
-  // const convertUnicode = (input) => {
-  //   return input.replace(/\\u[0-9a-fA-F]{4}/g,function(a,b) {
-  //     var charcode = parseInt(b,16);
-  //     return String.fromCharCode(charcode);
-  //   });
-  // }
-
   const hex = (total).toString(16) 
-  console.log(hex)
-  // const unicode = 
-  // const letter =  `\u00${total}c`
   const letter = String.fromCodePoint(parseInt(total, 16))
-  console.log(letter)
   
 
 
@@ -36,8 +29,9 @@ const Byte = ({byteIdx}) => {
         }
         <div className={styles.resultsContainer}>
         <div>
-          <p>{total}</p>
-          <p>{hex}</p>
+          <p>base 10: {total}</p>
+          <p>hex: {hex} </p>
+          <p>binary : {binary.reverse()}</p>
           <p>{letter}</p>
           <div className={styles.colorContainer}>
             <div 

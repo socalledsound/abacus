@@ -39,7 +39,8 @@ export const selectBytes = state => state.memory.numBytes
 export const selectBits = state => state.memory.numBits
 
 export const selectBitState = (byteIdx, bitIdx) => state => state.memory.bitValues[byteIdx][bitIdx]
-
+export const selectAllBitValues = state => state.memory.bitValues
+export const selectBitValuesByIndex = idx => state => state.memory.bitValues[idx]
 export const selectBitValue = (byteIdx, bitIdx) => state => {
  
     const bitState = state.memory.bitValues[byteIdx][bitIdx]
