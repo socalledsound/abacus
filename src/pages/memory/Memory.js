@@ -2,6 +2,7 @@ import React, {Fragment} from 'react'
 import { useSelector } from 'react-redux'
 import useModal from '../../components/Modal/useModal'
 import { selectBytes, selectTotal } from '../../features/memory/memorySlice' 
+import MemoryModal from './MemoryModal'
 import Byte from '../../features/memory/Byte'
 import styles from './Memory.module.css'
 
@@ -41,7 +42,7 @@ const Memory = () => {
       </div>
 
         <ModalContent>
-            this is going to be a description of what this page is
+            <MemoryModal />
         </ModalContent>
         </Fragment>
      );

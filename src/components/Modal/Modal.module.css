@@ -8,22 +8,23 @@
 
 .modalBody {
   background-color: rgba(200, 200, 200, 0.9);
+  border-radius: 0.3rem;
   position: absolute;
   top: 10%;
   left: 2rem;
-  width: 85vw;
-  height: 70vh;
+  width: 90vw;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 0.6rem;
 
   /* "bg-white relative p-5 shadow-lg rounded flex flex-col items-start text-lg text-gray-800" */
 }
 
 .closeModalButton {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 1rem;
   background-color: rgb(238, 15, 223);
   border-radius: 2rem;
   border: none;
@@ -32,4 +33,9 @@
   height: 4rem;
   font-size: 3rem;
   /* "absolute top-0 right-0 -mt-12 font-bold self-end rounded-full bg-red-200 mb-3 bg-white text-red-700 w-8 h-8" */
+}
+
+.closeModalButton:hover {
+  background-color: rgb(232, 79, 174);
+  color: black;
 }
