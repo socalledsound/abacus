@@ -22,8 +22,12 @@ const App = () => {
         <div >
           <p>
             rgb : r: {red}, g: {green} b: {blue}
-            hex: {`#${(red).toString(16)}${(green).toString(16)}${(blue).toString(16)}`}
           </p>
+          <p>
+          hex: {`#${(red).toString(16)}${(green).toString(16)}${(blue).toString(16)}`}
+          </p>
+            
+         
           <div style={{width: '200px', height: '200px', backgroundColor: `rgb(${red},${green},${blue})`}}/>
 
           
