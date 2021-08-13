@@ -1,0 +1,35 @@
+.modalContainer {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  /* "fixed top-0 left-0 h-screen w-full flex items-center justify-center" */
+}
+
+.modalBody {
+  background-color: rgba(200, 200, 200, 0.9);
+  position: absolute;
+  top: 10%;
+  left: 2rem;
+  width: 85vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  /* "bg-white relative p-5 shadow-lg rounded flex flex-col items-start text-lg text-gray-800" */
+}
+
+.closeModalButton {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgb(238, 15, 223);
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  /* "absolute top-0 right-0 -mt-12 font-bold self-end rounded-full bg-red-200 mb-3 bg-white text-red-700 w-8 h-8" */
+}
