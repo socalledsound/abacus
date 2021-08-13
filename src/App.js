@@ -19,7 +19,8 @@ const App = () => {
         {
           bytes.map((byte, byteIdx) => <Byte key={`byte${byteIdx}`} byteIdx={byteIdx}/>)
         }
-        <div >
+        <div className={styles.combinedBytes}>
+          <h3>combined bytes</h3>
           <p>
             rgb : r: {red}, g: {green} b: {blue}
           </p>

@@ -1,27 +1,31 @@
-.allBytesContainer{
-    display: flex;
-    flex-direction: row;
+.allBytesContainer {
+  display: flex;
+  flex-direction: row;
 }
 
-.byteContainer{
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
+.byteContainer {
+  background-color: rgb(184, 197, 197);
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
 }
 
-.resultsContainer{
-    margin-top: 20px;
-    background-color: rgb(184, 197, 197);
-    padding: 20px;
-    width: 200px;
+.resultsContainer {
+  margin-top: 20px;
+  background-color: rgb(184, 197, 197);
+  padding: 20px;
+  width: 200px;
+  border-top: black solid 2px;
 }
 
-.colorContainer{
-    background-color: white;
-    padding: 5px;
-    width: 100px;
+.colorContainer {
+  background-color: white;
+  padding: 5px;
+  width: 100px;
 }
-.colorValue{
-    width: 100px;
-    height: 100px;
+.colorValue {
+  width: 100px;
+  height: 100px;
 }
