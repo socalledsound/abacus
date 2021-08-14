@@ -16,7 +16,7 @@ const Byte = ({byteIdx}) => {
   console.log(binary)
   const bits = Array.from({length: numBits}, (el, i) => i)
   const hex = (total).toString(16) 
-  const letter = String.fromCodePoint(parseInt(total, 16))
+  const letter = String.fromCodePoint(parseInt(hex, 16))
   
 
 
